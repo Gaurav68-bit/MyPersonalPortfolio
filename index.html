@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Sarma — Full-Stack Developer & AI Automation Specialist</title>
+    <meta name="description" content="I build custom web applications and AI automation systems that help startups and businesses grow. React, Node.js, OpenAI specialist with 3+ years of experience.">
+    <meta name="keywords" content="full-stack developer, AI automation, MERN stack developer, React developer, Node.js developer, freelance developer, AI agents, custom web applications">
+    <meta name="author" content="Gaurav Sarma">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gaurav Sarma — Full-Stack Developer & AI Automation Specialist">
+    <meta property="og:description" content="I build custom web apps and AI systems that help businesses grow revenue.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gaurav Sarma — Full-Stack Developer & AI Specialist">
+    <meta name="twitter:description" content="Custom web applications and AI automation systems for startups and businesses.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/premium.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Gaurav Sarma","jobTitle":"Full-Stack Developer & AI Automation Specialist","url":"https://gauravsarma.dev","sameAs":["https://github.com/","https://linkedin.com/"]}
+    </script>
+</head>
+<body>
+
+    <!-- ==================== PAGE LOADER ==================== -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-curtain loader-curtain-left"></div>
+        <div class="loader-curtain loader-curtain-right"></div>
+        <div class="loader-content">
+            <div class="loader-logo" id="loaderLogo">
+                <span class="logo-text"><span class="logo-bracket">&lt;</span>GS<span class="logo-bracket"> /&gt;</span></span>
+                <span class="logo-name">GAURAV SARMA</span>
+            </div>
+            <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+            <div class="loader-tagline">Building the future</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Noise Overlay -->
+    <svg class="noise-overlay" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter>
+        <rect width="100%" height="100%" filter="url(#noiseFilter)"/>
+    </svg>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text"><span class="logo-bracket">&lt;</span>GS<span class="logo-bracket"> /&gt;</span></span>
+                <span class="logo-name">GAURAV SARMA</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#ai-services" class="nav-link">AI Solutions</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link btn-nav-cta">Let's Talk</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="music-toggle" id="musicToggle" aria-label="Toggle music">
+                <svg class="music-icon-on" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                <svg class="music-icon-off" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/><line x1="1" y1="1" x2="23" y2="23" stroke-width="2.5"/></svg>
+            </button>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-gradient-orb hero-orb-1"></div>
+        <div class="hero-gradient-orb hero-orb-2"></div>
+        <div class="hero-gradient-orb hero-orb-3"></div>
+
+        <div class="container hero-content">
+            <div class="hero-tag">
+                <span class="hero-tag-dot"></span>
+                Available for new projects
+            </div>
+            <h1 class="hero-title">
+                I Build Software That<br>
+                <span class="gradient-text word-rotator" id="heroGradientText">
+                    <span class="word-rotator-track" id="wordRotatorTrack">
+                        <span class="word-rotator-word active">Turns Ideas Into Revenue</span>
+                        <span class="word-rotator-word">Ships Products Faster</span>
+                        <span class="word-rotator-word">Automates Everything</span>
+                        <span class="word-rotator-word">Drives Real Growth</span>
+                    </span>
+                </span>
+            </h1>
+            <p class="hero-subtitle">
+                Full-stack developer & AI automation specialist helping startups and businesses 
+                ship products that actually grow their bottom line.
+            </p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Start a Project</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="#work" class="btn btn-secondary">
+                    <span>View My Work</span>
+                </a>
+            </div>
+            <div class="hero-glass-card" id="heroGlassCard">
+                <div class="glass-card-item">
+                    <span class="glass-card-dot pulse-green"></span>
+                    <span>Available for projects</span>
+                </div>
+                <div class="glass-card-divider"></div>
+                <div class="glass-card-item">
+                    <span>🕐</span>
+                    <span id="heroLocalTime">--:--</span>
+                    <span class="glass-card-label">IST</span>
+                </div>
+                <div class="glass-card-divider"></div>
+                <div class="glass-card-item">
+                    <span>🔥</span>
+                    <span>Only <strong>2 slots</strong> left</span>
+                </div>
+            </div>
+            <div class="hero-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <span class="terminal-title">gaurav@dev ~ projects</span>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span> <span class="command">_</span><span class="typing-cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILL CONSTELLATION ==================== -->
+    <section id="skills" class="constellation-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Tech Stack</span>
+                <h2 class="section-title">My <span class="gradient-text">Skill Universe</span></h2>
+                <p class="section-subtitle">Hover and explore the technologies I work with daily.</p>
+            </div>
+            <div class="constellation-wrapper">
+                <canvas id="constellationCanvas"></canvas>
+                <div class="constellation-tooltip" id="constellationTooltip"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRUST / METRICS ==================== -->
+    <section id="trust">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-card reveal">
+                    <span class="metric-number"><span class="counter" data-target="3">0</span>+</span>
+                    <span class="metric-label">Years of Experience</span>
+                </div>
+                <div class="metric-card reveal">
+                    <span class="metric-number"><span class="counter" data-target="20">0</span>+</span>
+                    <span class="metric-label">Projects Delivered</span>
+                </div>
+                <div class="metric-card reveal">
+                    <span class="metric-number"><span class="counter" data-target="15">0</span>+</span>
+                    <span class="metric-label">Happy Clients</span>
+                </div>
+                <div class="metric-card reveal">
+                    <span class="metric-number"><span class="counter" data-target="99">0</span>%</span>
+                    <span class="metric-label">On-Time Delivery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">What I Do</span>
+                <h2 class="section-title">Services That <span class="gradient-text">Drive Results</span></h2>
+                <p class="section-subtitle">I don't just write code — I build solutions that solve real business problems and generate measurable outcomes.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#grad1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#7c3aed"/><stop offset="100%" style="stop-color:#06b6d4"/></linearGradient></defs>
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Full-Stack Web Applications</h3>
+                    <p class="service-desc">Custom web applications built with the MERN stack that handle real users, real traffic, and real transactions.</p>
+                    <ul class="service-list">
+                        <li>Responsive, conversion-focused UI/UX</li>
+                        <li>Scalable backend architecture</li>
+                        <li>Database design & optimization</li>
+                        <li>Payment & third-party integrations</li>
+                    </ul>
+                    <a href="#contact" class="service-cta">Discuss your app →</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#grad1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"></path><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.58 3.25 3.93"></path><path d="M8.56 13a8 8 0 0 0-2.3 3.5"></path><path d="M15.44 13a8 8 0 0 1 2.3 3.5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">AI Automation & Agents</h3>
+                    <p class="service-desc">Intelligent systems that eliminate repetitive work, reduce costs, and unlock capabilities you didn't think possible.</p>
+                    <ul class="service-list">
+                        <li>Custom AI chatbots & assistants</li>
+                        <li>Workflow automation systems</li>
+                        <li>Data processing pipelines</li>
+                        <li>OpenAI API integrations</li>
+                    </ul>
+                    <a href="#contact" class="service-cta">Explore AI solutions →</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#grad1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline><line x1="14" y1="4" x2="10" y2="20"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Backend & API Systems</h3>
+                    <p class="service-desc">Robust server architectures and API integrations that connect your tools, platforms, and data — securely and reliably.</p>
+                    <ul class="service-list">
+                        <li>RESTful API design & development</li>
+                        <li>Database modeling & migrations</li>
+                        <li>Authentication & security layers</li>
+                        <li>Performance optimization</li>
+                    </ul>
+                    <a href="#contact" class="service-cta">Plan your backend →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS / CASE STUDIES ==================== -->
+    <section id="work">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Selected Work</span>
+                <h2 class="section-title">Projects That <span class="gradient-text">Delivered Results</span></h2>
+                <p class="section-subtitle">Every project starts with a problem and ends with measurable impact. Here's proof.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal border-flash">
+                    <div class="project-image">
+                        <div class="project-browser-frame">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-url">retailhub.store</div>
+                        </div>
+                        <img src="/assets/project-ecommerce.png" alt="E-Commerce Platform" class="project-img" loading="lazy">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Stripe</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span class="meta-label">Problem</span>
+                                <p>Client needed a scalable online store that could handle thousands of products with fast search and seamless checkout.</p>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="meta-label">Solution</span>
+                                <p>Built a full-stack MERN application with Stripe payments, inventory management, and an admin dashboard.</p>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="meta-label">Result</span>
+                                <p>Launched with 1,000+ products. Page load time reduced by 40%. Processing 200+ orders/week within the first month.</p>
+                            </div>
+                        </div>
+                        <div class="project-results">
+                            <div class="result-stat">
+                                <span class="result-number">1000+</span>
+                                <span class="result-label">Products</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="result-number">40%</span>
+                                <span class="result-label">Faster Loads</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="result-number">200+</span>
+                                <span class="result-label">Orders/Week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal border-flash">
+                    <div class="project-image">
+                        <div class="project-browser-frame">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-url">techstart.ai/chat</div>
+                        </div>
+                        <img src="/assets/project-ai-chatbot.png" alt="AI Customer Support Agent" class="project-img" loading="lazy">
+                        <div class="project-tags">
+                            <span class="project-tag">OpenAI</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express</span>
+                            <span class="project-tag">React</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Customer Support Agent</h3>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span class="meta-label">Problem</span>
+                                <p>A startup was drowning in repetitive support tickets — 80% were common questions that didn't need a human.</p>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="meta-label">Solution</span>
+                                <p>Built an AI-powered support agent using OpenAI APIs with a custom knowledge base trained on company docs.</p>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="meta-label">Result</span>
+                                <p>Automated 60% of support queries. Saved the team 20+ hours per week. Customer satisfaction stayed above 95%.</p>
+                            </div>
+                        </div>
+                        <div class="project-results">
+                            <div class="result-stat">
+                                <span class="result-number">60%</span>
+                                <span class="result-label">Queries Automated</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="result-number">20+</span>
+                                <span class="result-label">Hours Saved/Week</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="result-number">95%</span>
+                                <span class="result-label">Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal border-flash">
+                    <div class="project-image">
+                        <div class="project-browser-frame">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-url">dataflow.agency/dash</div>
+                        </div>
+                        <img src="/assets/project-dashboard.png" alt="SaaS Analytics Dashboard" class="project-img" loading="lazy">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">REST APIs</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Charts</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SaaS Analytics Dashboard</h3>
+                        <div class="project-meta">
+                            <div class="project-meta-item">
+                                <span class="meta-label">Problem</span>
+                                <p>An agency was spending 15+ hours/week manually compiling client reports from multiple data sources.</p>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="meta-label">Solution</span>
+                                <p>Built a real-time analytics dashboard with automated report generation and multi-source API integrations.</p>
+                            </div>
+                            <div class="project-meta-item">
+                                <span class="meta-label">Result</span>
+                                <p>Reduced manual reporting by 80%. Real-time data across 5 platforms. Deployed to 12 agency clients in 3 weeks.</p>
+                            </div>
+                        </div>
+                        <div class="project-results">
+                            <div class="result-stat">
+                                <span class="result-number">80%</span>
+                                <span class="result-label">Less Manual Work</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="result-number">5</span>
+                                <span class="result-label">Platforms Unified</span>
+                            </div>
+                            <div class="result-stat">
+                                <span class="result-number">12</span>
+                                <span class="result-label">Clients Onboarded</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESS TIMELINE ==================== -->
+    <section id="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">How I Work</span>
+                <h2 class="section-title">From Idea to <span class="gradient-text">Launch</span></h2>
+                <p class="section-subtitle">A battle-tested process refined over 20+ successful projects.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-line" id="processLine"></div>
+                <div class="process-step reveal" data-step="1">
+                    <div class="process-icon">💬</div>
+                    <h4>Discovery</h4>
+                    <p>Deep dive into your goals, users, and constraints. No code until we align.</p>
+                </div>
+                <div class="process-step reveal" data-step="2">
+                    <div class="process-icon">🎨</div>
+                    <h4>Design</h4>
+                    <p>Wireframes and prototypes you can click through before a single line is written.</p>
+                </div>
+                <div class="process-step reveal" data-step="3">
+                    <div class="process-icon">⚡</div>
+                    <h4>Develop</h4>
+                    <p>Clean, tested code with weekly demos. You see progress in real time.</p>
+                </div>
+                <div class="process-step reveal" data-step="4">
+                    <div class="process-icon">🧪</div>
+                    <h4>Test</h4>
+                    <p>Rigorous QA across devices and edge cases. Nothing ships broken.</p>
+                </div>
+                <div class="process-step reveal" data-step="5">
+                    <div class="process-icon">🚀</div>
+                    <h4>Launch</h4>
+                    <p>Smooth deployment with monitoring. I'm there when you go live.</p>
+                </div>
+                <div class="process-step reveal" data-step="6">
+                    <div class="process-icon">🛡️</div>
+                    <h4>Support</h4>
+                    <p>30 days free post-launch support. Your success is my reputation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== AI SERVICES ==================== -->
+    <section id="ai-services">
+        <div class="container">
+            <div class="ai-layout">
+                <div class="ai-content reveal">
+                    <span class="section-tag">AI-Powered Solutions</span>
+                    <h2 class="section-title">What If Your Business Could Run <span class="gradient-text">24/7</span> Without Hiring More People?</h2>
+                    <p class="ai-desc">AI isn't science fiction anymore — it's a practical tool that can automate your workflows, handle customer interactions, and process data at scale. I build custom AI solutions tailored to your specific business needs.</p>
+
+                    <div class="ai-features">
+                        <div class="ai-feature">
+                            <div class="ai-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>AI Chatbots & Assistants</h4>
+                                <p>Custom-trained bots that handle customer queries, book appointments, and qualify leads — around the clock.</p>
+                            </div>
+                        </div>
+                        <div class="ai-feature">
+                            <div class="ai-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4>Workflow Automation</h4>
+                                <p>Automate repetitive tasks like data entry, email responses, and report generation — saving hours every week.</p>
+                            </div>
+                        </div>
+                        <div class="ai-feature">
+                            <div class="ai-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                            </div>
+                            <div>
+                                <h4>Data Processing</h4>
+                                <p>Intelligent pipelines that extract, transform, and analyze data from multiple sources automatically.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="margin-top: 1rem;">
+                        <span>Explore AI For Your Business</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+
+                <div class="ai-visual reveal">
+                    <div class="ai-diagram">
+                        <div class="ai-node ai-node-center">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"></path><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.58 3.25 3.93"></path></svg>
+                            <span>AI Agent</span>
+                        </div>
+                        <div class="ai-node ai-node-1">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>Emails</span>
+                        </div>
+                        <div class="ai-node ai-node-2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                            <span>Reports</span>
+                        </div>
+                        <div class="ai-node ai-node-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <span>Customers</span>
+                        </div>
+                        <div class="ai-node ai-node-4">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect></svg>
+                            <span>Data</span>
+                        </div>
+                        <!-- Connection lines -->
+                        <svg class="ai-connections" viewBox="0 0 400 400">
+                            <line x1="200" y1="200" x2="200" y2="50" stroke="url(#connGrad)" stroke-width="1" opacity="0.4"/>
+                            <line x1="200" y1="200" x2="350" y2="140" stroke="url(#connGrad)" stroke-width="1" opacity="0.4"/>
+                            <line x1="200" y1="200" x2="350" y2="300" stroke="url(#connGrad)" stroke-width="1" opacity="0.4"/>
+                            <line x1="200" y1="200" x2="50" y2="300" stroke="url(#connGrad)" stroke-width="1" opacity="0.4"/>
+                            <defs><linearGradient id="connGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#7c3aed"/><stop offset="100%" style="stop-color:#06b6d4"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-image-wrapper reveal border-flash">
+                    <div class="about-image-glow"></div>
+                    <div class="about-image">
+                        <img src="/assets/profile.png" alt="Gaurav Sarma - Full Stack Developer" id="profileImg">
+                    </div>
+                    <div class="about-image-badge">
+                        <span class="badge-dot"></span>
+                        Open to Work
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Hi, I'm <span class="gradient-text">Gaurav</span>.</h2>
+                    <p class="about-text">
+                        Over the past 3+ years, I've been building software that solves real problems for real businesses. 
+                        I started as a full-stack developer working with the MERN stack, and quickly expanded into 
+                        AI automation and intelligent agent systems — because that's where the biggest leverage is for 
+                        businesses today.
+                    </p>
+                    <p class="about-text">
+                        I don't just write code and walk away. I work with founders, product teams, and agencies to 
+                        understand the business problem first — then engineer the right solution. Whether that's a 
+                        customer-facing web app, an internal tool, or an AI system that saves your team 20 hours a week.
+                    </p>
+                    <p class="about-text highlight-text">
+                        If you're looking for a developer who thinks like a product owner and delivers like a senior 
+                        engineer — let's talk.
+                    </p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="about-stat-icon">🎯</span>
+                            <div>
+                                <strong>Focus</strong>
+                                <span>Web Apps & AI Systems</span>
+                            </div>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-icon">📍</span>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Guwahati, Assam</span>
+                            </div>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-icon">⚡</span>
+                            <div>
+                                <strong>Availability</strong>
+                                <span>2-3 week start</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-socials">
+                        <a href="https://github.com/Gaurav68-bit" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gaurav68sarma/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="mailto:gauravsarma68@gmail.com" class="social-link" aria-label="Email">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Client Words</span>
+                <h2 class="section-title">What People <span class="gradient-text">Say About Me</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal border-flash">
+                    <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    <p class="testimonial-text">"Gaurav built our entire e-commerce platform from scratch. He understood the business requirements perfectly and delivered a product that exceeded our expectations. Sales went up 35% in the first quarter."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RK</div>
+                        <div>
+                            <strong>Rajesh K.</strong>
+                            <span>Founder, RetailHub</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal border-flash">
+                    <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    <p class="testimonial-text">"The AI chatbot Gaurav built for us was a game-changer. It handles most of our customer queries automatically, and our support team can finally focus on complex issues. Highly recommend."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SP</div>
+                        <div>
+                            <strong>Sneha P.</strong>
+                            <span>CTO, TechStart</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal border-flash">
+                    <div class="testimonial-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    <p class="testimonial-text">"Working with Gaurav felt like having a technical co-founder. He doesn't just code — he thinks about the product, the users, and the business impact. Our dashboard project was delivered ahead of schedule."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AM</div>
+                        <div>
+                            <strong>Arun M.</strong>
+                            <span>Managing Director, DataFlow Agency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section id="cta-banner">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2 class="cta-title">Ready to Build Something<br>That Actually <span class="gradient-text">Matters</span>?</h2>
+                <p class="cta-subtitle">Let's discuss your project, explore what's possible, and create a plan to turn your idea into reality. No pressure, no obligations — just a conversation.</p>
+                <a href="#contact" class="btn btn-primary btn-large">
+                    <span>Book a Free Consultation</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info reveal">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Start a <span class="gradient-text">Conversation</span></h2>
+                    <p class="contact-desc">Have a project in mind? Want to explore how AI can help your business? Or just want to say hi? Fill out the form and I'll get back to you within 24 hours.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:gauravsarma68@gmail.com">gauravsarma68@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Guwahati, Assam, India</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            </div>
+                            <div>
+                                <strong>Response Time</strong>
+                                <span>Within 24 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="projectType">Project Type</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="web-app">Web Application</option>
+                                <option value="ai-automation">AI Automation / Agent</option>
+                                <option value="backend-api">Backend / API Development</option>
+                                <option value="consulting">Technical Consulting</option>
+                                <option value="other">Something Else</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="" disabled selected>Select a range</option>
+                                <option value="under-1k">Under $1,000</option>
+                                <option value="1k-5k">$1,000 — $5,000</option>
+                                <option value="5k-10k">$5,000 — $10,000</option>
+                                <option value="10k-plus">$10,000+</option>
+                                <option value="not-sure">Not Sure Yet</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell Me About Your Project</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Describe your project, goals, and timeline..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                    <p class="form-note">🔒 Your information is secure and will never be shared.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <span class="logo-text"><span class="logo-bracket">&lt;</span>GS<span class="logo-bracket"> /&gt;</span></span>
+                        <span class="logo-name">GAURAV SARMA</span>
+                    </a>
+                    <p>Building software that turns ideas into revenue.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <a href="#services">Services</a>
+                        <a href="#work">Work</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <a href="#services">Web Applications</a>
+                        <a href="#ai-services">AI Automation</a>
+                        <a href="#services">API Development</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="mailto:hello@gauravsarma.dev">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gaurav Sarma. All rights reserved.</p>
+                <p>Designed & built with precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta" id="floatingCta">
+        <a href="#contact" class="floating-cta-btn">
+            <span class="floating-cta-pulse"></span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <span>Let's Talk</span>
+        </a>
+    </div>
+
+    <!-- Command Palette -->
+    <div class="cmd-palette-overlay" id="cmdPalette">
+        <div class="cmd-palette">
+            <div class="cmd-palette-header">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                <input type="text" class="cmd-palette-input" id="cmdInput" placeholder="Type a command..." autocomplete="off">
+                <kbd class="cmd-kbd">ESC</kbd>
+            </div>
+            <div class="cmd-palette-list" id="cmdList">
+                <a href="#contact" class="cmd-item" data-cmd="start project">
+                    <span class="cmd-icon">🚀</span>
+                    <div><strong>Start a Project</strong><span>Let's build something amazing</span></div>
+                </a>
+                <a href="#work" class="cmd-item" data-cmd="view work portfolio">
+                    <span class="cmd-icon">💼</span>
+                    <div><strong>View My Work</strong><span>Browse case studies & projects</span></div>
+                </a>
+                <a href="#about" class="cmd-item" data-cmd="about me">
+                    <span class="cmd-icon">👤</span>
+                    <div><strong>About Me</strong><span>Learn about my background</span></div>
+                </a>
+                <a href="#services" class="cmd-item" data-cmd="services">
+                    <span class="cmd-icon">⚡</span>
+                    <div><strong>Services</strong><span>What I can build for you</span></div>
+                </a>
+                <a href="mailto:hello@gauravsarma.dev" class="cmd-item" data-cmd="email contact">
+                    <span class="cmd-icon">📧</span>
+                    <div><strong>Send Email</strong><span>hello@gauravsarma.dev</span></div>
+                </a>
+            </div>
+            <div class="cmd-palette-footer">
+                <span><kbd>↑↓</kbd> Navigate</span>
+                <span><kbd>↵</kbd> Select</span>
+                <span><kbd>Esc</kbd> Close</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Keyboard Shortcut Hint -->
+    <div class="kbd-hint" id="kbdHint">
+        Press <kbd>Ctrl</kbd> + <kbd>K</kbd> to navigate
+    </div>
+
+    <!-- Scroll End Message -->
+    <div class="scroll-end" id="scrollEnd">
+        <p>You've seen everything! Now let's <a href="#contact">build something together</a> ↑</p>
+    </div>
+
+    <!-- Audio -->
+    <audio id="music1" src="/assets/music1.mp3" loop preload="auto"></audio>
+    <audio id="music2" src="/assets/music2.mp3" loop preload="auto"></audio>
+
+    <!-- Scripts -->
+    <script type="module" src="/js/particles.js"></script>
+    <script type="module" src="/js/stars.js"></script>
+    <script type="module" src="/js/constellation.js"></script>
+    <script type="module" src="/js/animations.js"></script>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/premium.js"></script>
+</body>
+</html>
