@@ -109,24 +109,36 @@ if (contactForm) {
         submitBtn.classList.add('loading');
 
         const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
+        
+        // IMPORTANT: Replace 'YOUR_ACCESS_KEY_HERE' with your actual free API key from https://web3forms.com/
+        formData.append("access_key", "0c8845e8-1f9c-4a41-bd0f-14e0a3871087");
 
         try {
-            await new Promise(resolve => setTimeout(resolve, 1500));
+            // Send the actual email using Web3Forms
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
 
-            // Fly away animation
-            submitBtn.classList.remove('loading');
-            submitBtn.classList.add('sent');
+            const result = await response.json();
 
-            setTimeout(() => {
-                contactForm.innerHTML = `
-                    <div class="form-success">
-                        <div style="font-size:3rem;margin-bottom:16px;">🎉</div>
-                        <h3>Message Sent!</h3>
-                        <p>Thanks for reaching out! I'll get back to you within 24 hours.</p>
-                    </div>
-                `;
-            }, 600);
+            if (result.success) {
+                // Fly away animation
+                submitBtn.classList.remove('loading');
+                submitBtn.classList.add('sent');
+
+                setTimeout(() => {
+                    contactForm.innerHTML = `
+                        <div class="form-success">
+                            <div style="font-size:3rem;margin-bottom:16px;">🎉</div>
+                            <h3>Message Sent!</h3>
+                            <p>Thanks for reaching out! I'll get back to you within 24 hours.</p>
+                        </div>
+                    `;
+                }, 600);
+            } else {
+                throw new Error("Submission failed");
+            }
         } catch (error) {
             submitBtn.classList.remove('loading');
             alert('Something went wrong. Please try again or email me directly.');
